@@ -6,4 +6,8 @@ attr_reader :opening_time, :name, :dishes
     @name = name
     @dishes = []
   end
+
+  def closing_time(time)
+    ((opening_time.to_i + time).round(2).to_s) + ':00'
+  end
 end
