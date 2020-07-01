@@ -10,4 +10,8 @@ attr_reader :opening_time, :name, :dishes
   def closing_time(time)
     ((opening_time.to_i + time).round(2).to_s) + ':00'
   end
+
+  def add_dish(dish)
+    @dishes.push(dish)
+  end 
 end
