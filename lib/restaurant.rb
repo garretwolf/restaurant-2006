@@ -26,4 +26,7 @@ attr_reader :opening_time, :name, :dishes
   def menu_dish_names
     @dishes.map(&:upcase)
   end
+
+  # def announce_closing_time
+  # end
 end
