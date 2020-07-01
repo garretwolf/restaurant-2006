@@ -13,5 +13,13 @@ attr_reader :opening_time, :name, :dishes
 
   def add_dish(dish)
     @dishes.push(dish)
-  end 
+  end
+
+  def open_for_lunch?
+    if @opening_time.to_i < 12
+      return true
+    else
+      return false
+    end
+  end
 end
