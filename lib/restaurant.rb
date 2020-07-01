@@ -22,4 +22,8 @@ attr_reader :opening_time, :name, :dishes
       return false
     end
   end
+
+  def menu_dish_names
+    @dishes.map(&:upcase)
+  end
 end
